@@ -1,0 +1,51 @@
+#logo h1 {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#header blockquote {
+  font-size: 3rem;
+  font-style: italic;
+  float: right;
+}
+
+#header {
+  margin: 5%;
+}
+
+#header p {
+  margin-right: 580px;
+  margin-top: 0px;
+}
+
+#content {
+  display: flex;
+}
+
+#content-side {
+  margin-left: 3%;
+  width: 25%;
+}
+
+a {
+  text-decoration: none;
+  color: coral;
+}
+
+#content-side a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: coral;
+}
+
+#content-main {
+  width: 490px;
+}
+
+#content-main h2 {
+  margin-bottom: 0px;
+}

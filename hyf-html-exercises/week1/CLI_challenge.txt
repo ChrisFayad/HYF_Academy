@@ -1,0 +1,3 @@
+Q1: By adding a dot in front of the file/folder name we create a hidden file/folder - We display it by using the command ls -a
+Q2: By adding a -p in front of mkdir followed by the nested directories
+Q3: We use echo _first messege_ > file.txt then we use echo _second message_ >> file.txt
