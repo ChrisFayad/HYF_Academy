@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url("Ubuntu-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "IndieFlower";
+  src: url("IndieFlower-Regular.ttf") format("ttf");
+}
+body {
+  background: #200122; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Mobile Version */
+h1 {
+  text-align: center;
+  padding: 5px;
+  margin: 30px 0;
+}
+h2 {
+  text-align: center;
+  margin: 15px 0 30px;
+  background: linear-gradient(45deg, cadetblue, seagreen);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+h3 {
+  font-family: "Ubuntu";
+}
+
+p {
+  font-family: "IndieFlower", monospace;
+}
+.grid-item h3 {
+  padding: 10px;
+  background-color: cadetblue;
+  border-bottom: 2px solid black;
+}
+.grid-item:last-child {
+  margin-bottom: 30px;
+}
+/* Float Grid */
+.grid-floats {
+  float: left;
+}
+
+.grid-floats .grid-item {
+  width: 90%;
+  margin: 10px auto;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.grid-floats .grid-item img {
+  width: 80%;
+  height: auto;
+}
+
+.grid-floats .grid-item p {
+  padding: 5px 10px;
+  border-top: 2px dashed seagreen;
+  font-style: italic;
+  color: tomato;
+}
+/* Flex Grid */
+.grid-flex {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.grid-flex .grid-item {
+  width: 90%;
+  margin: 10px auto;
+  border: 2px dashed black;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.grid-flex .grid-item img {
+  width: 80%;
+  height: auto;
+}
+.grid-flex .grid-item p {
+  padding: 5px 10px;
+  background-color: seagreen;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+/* Tablet Version */
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+    margin: 50px 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+    margin: 30px 0 45px;
+  }
+  .grid-item h3 {
+    height: 66px;
+  }
+  .grid-item:first-child h3,
+  .grid-item:nth-child(2) h3,
+  .grid-item:nth-child(3) h3,
+  .grid-item:nth-child(5) h3,
+  .grid-item:nth-child(6) h3,
+  .grid-item:nth-child(8) h3,
+  .grid-item:nth-child(10) h3,
+  .grid-item:nth-child(12) h3,
+  .grid-item:nth-child(13) h3 {
+    padding-top: 20px;
+  }
+  .grid-floats,
+  .grid-flex {
+    margin-bottom: 50px;
+  }
+  /* Float Grid */
+  .grid-floats .grid-item {
+    float: left;
+    height: 400px;
+    width: 30%;
+    margin: 10px 0;
+    margin-left: 2%;
+    overflow-y: auto;
+    border-width: 3px;
+  }
+  .grid-floats .grid-item:first-child {
+    margin-left: 2%;
+  }
+  .grid-floats .grid-item:nth-child(2) {
+    margin-left: 4.5%;
+  }
+  .grid-floats .grid-item:first-child,
+  .grid-floats .grid-item:nth-child(2) {
+    width: 45%;
+  }
+
+  .grid-floats .grid-item img {
+    width: 70%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .grid-floats .grid-item p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 5px;
+    word-break: break-all;
+  }
+  .grid-floats .grid-item:nth-child(2) p {
+    word-break: keep-all;
+  }
+  .grid-floats .grid-item:first-child p,
+  .grid-floats .grid-item:nth-child(2) p {
+    padding: 5px 10px;
+  }
+  /* Flex Grid */
+  .grid-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .grid-flex .grid-item {
+    width: 30%;
+    height: 609px;
+    overflow-y: auto;
+  }
+  .grid-flex .grid-item:first-child,
+  .grid-flex .grid-item:nth-child(2) {
+    width: 45%;
+  }
+
+  .grid-flex .grid-item img {
+    width: 80%;
+    height: auto;
+  }
+
+  .grid-flex .grid-item p {
+    line-height: 2rem;
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+  .grid-flex .grid-item:first-child p {
+    padding: 37px 10px;
+  }
+}
+
+/* Desktop Version */
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+    margin: 30px 0;
+    color: white;
+  }
+
+  h2 {
+    font-size: 3rem;
+    margin: 50px 0;
+  }
+  .grid-item h3 {
+    font-size: 1.5rem;
+    height: 100px;
+    border-bottom: 5px solid black;
+    background-color: rgb(42, 70, 71);
+  }
+  .grid-item:first-child h3,
+  .grid-item:nth-child(3) h3,
+  .grid-item:nth-child(4) h3,
+  .grid-item:nth-child(5) h3,
+  .grid-item:nth-child(6) h3,
+  .grid-item:nth-child(7) h3,
+  .grid-item:nth-child(8) h3,
+  .grid-item:nth-child(10) h3,
+  .grid-item:nth-child(11) h3,
+  .grid-item:nth-child(12) h3,
+  .grid-item:nth-child(13) h3,
+  .grid-item:nth-child(14) h3 {
+    padding-top: 30px;
+  }
+  /* Float Grid */
+  .grid-floats .grid-item {
+    float: left;
+    height: 615px;
+    width: 23%;
+    margin: 10px 0;
+    margin-left: 1.5%;
+    overflow-y: hidden;
+    border-width: 5px;
+  }
+  .grid-floats .grid-item:first-child {
+    width: 48%;
+    margin-left: 2%;
+    height: auto;
+    margin-top: 85px;
+  }
+  .grid-floats .grid-item:first-child img {
+    width: 50%;
+    height: auto;
+    margin-top: 0;
+    float: left;
+    border-right: 5px dashed seagreen;
+  }
+  .grid-floats .grid-item img {
+    transition: transform 1s ease-in-out;
+  }
+  .grid-floats .grid-item img:hover {
+    transform: scale(0.5) rotate(360deg);
+  }
+  .grid-floats .grid-item:nth-child(2) {
+    width: 23%;
+    margin-left: 1.5%;
+  }
+  .grid-floats .grid-item:first-child p {
+    line-height: 2.5rem;
+    border: hidden;
+    margin-top: 45px;
+  }
+  .grid-floats .grid-item p {
+    word-break: keep-all;
+    color: cornflowerblue;
+    height: 268px;
+    overflow-y: auto;
+  }
+  .grid-floats .grid-item:nth-child(2) p {
+    padding-top: 35px;
+  }
+  .grid-floats .grid-item:nth-child(4) p,
+  .grid-floats .grid-item:nth-child(8) p,
+  .grid-floats .grid-item:nth-child(11) p {
+    padding-top: 25px;
+  }
+  .grid-floats .grid-item p::selection {
+    background-color: brown;
+  }
+  /* Flex Grid */
+  .grid-flex .grid-item {
+    width: 23%;
+    height: auto;
+    border: 5px dashed black;
+  }
+  .grid-flex .grid-item:first-child {
+    width: 48%;
+  }
+  .grid-flex .grid-item:nth-child(2),
+  .grid-flex .grid-item:nth-child(3) {
+    width: 23%;
+  }
+
+  .grid-flex .grid-item img {
+    width: 80%;
+    height: auto;
+  }
+  .grid-flex .grid-item:first-child img {
+    width: 50%;
+  }
+
+  .grid-flex .grid-item p {
+    border-top: 5px dashed black;
+    transition: background-color 0.5s ease-in;
+  }
+  .grid-flex .grid-item p:hover {
+    background-color: white;
+  }
+  .grid-flex .grid-item p::selection {
+    background-color: yellowgreen;
+  }
+}
