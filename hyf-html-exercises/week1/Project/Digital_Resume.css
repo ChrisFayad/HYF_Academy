@@ -637,7 +637,7 @@ footer h6 {
     margin: 0 auto 50px;
   }
   #Soft_Skills img {
-    margin-left: 12%;
+    margin-left: 5%;
   }
   #Soft_Skills li .tip-text {
     font-size: 1.2em !important;
@@ -645,14 +645,14 @@ footer h6 {
   #Soft_Skills li:first-child .tip-text,
   #Soft_Skills ul li:nth-child(3) .tip-text {
     font-size: 1.5em;
-    top: calc((100vh * 4) + 300px);
+    top: calc((100vh * 4) + 10px);
   }
   #Soft_Skills ul li:nth-child(2) .tip-text {
-    top: calc((100vh * 4) + 400px);
+    top: calc((100vh * 4) + 90px);
   }
   #Soft_Skills ul li:nth-child(4) .tip-text,
   #Soft_Skills ul li:nth-child(5) .tip-text {
-    top: calc((100vh * 5) - 235px);
+    top: calc((100vh * 4) + 195px);
   }
   #Soft_Skills li:first-child .tip-text,
   #Soft_Skills li:nth-child(4) .tip-text {
