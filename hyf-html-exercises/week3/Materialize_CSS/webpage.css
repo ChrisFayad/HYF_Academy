@@ -3,3 +3,6 @@ nav .badge {
   top: 20px;
   right: 20px;
 }
+main {
+  margin: 30px auto 15px;
+}
