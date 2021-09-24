@@ -19,7 +19,9 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $('.datepicker').datepicker({
-        disableWeekends: 'true'
-    });
+    $('.datepicker').datepicker({disableWeekends: 'true'});
+});
+
+$(document).ready(function(){
+    $('.tooltipped').tooltip();
 });
