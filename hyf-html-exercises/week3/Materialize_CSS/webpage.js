@@ -14,6 +14,12 @@ $(document).ready(function(){
     $('.parallax').parallax();
  });
 
- $(document).ready(function(){
-    $('.tabs').tabs();
-  });
+$(document).ready(function(){
+   $('.tabs').tabs({swipeable: 'true'});
+});
+
+$(document).ready(function(){
+    $('.datepicker').datepicker({
+        disableWeekends: 'true'
+    });
+});
