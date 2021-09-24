@@ -6,3 +6,7 @@ nav .badge {
 main {
   margin: 30px auto 15px;
 }
+
+.collection .collection-item.avatar i.circle {
+  font-size: 22px;
+}
