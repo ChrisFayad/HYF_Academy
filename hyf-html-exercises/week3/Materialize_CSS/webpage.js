@@ -4,8 +4,16 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $('.fixed-action-btn').floatingActionButton();
-  });
+});
 
-  $(document).ready(function(){
-      $('.modal').modal();
+$(document).ready(function(){
+   $('.modal').modal();
+});
+
+$(document).ready(function(){
+    $('.parallax').parallax();
+ });
+
+ $(document).ready(function(){
+    $('.tabs').tabs();
   });
