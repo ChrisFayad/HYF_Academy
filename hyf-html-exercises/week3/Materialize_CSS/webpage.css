@@ -1,10 +1,24 @@
+main {
+  margin: 30px auto 15px;
+}
+
 nav .badge {
   position: relative;
   top: 20px;
   right: 20px;
 }
-main {
-  margin: 30px auto 15px;
+
+.sidenav li > a > i.material-icons {
+  margin: 0;
+}
+
+.sidenav li {
+  line-height: 0;
+}
+.sidenav li:nth-child(5),
+.sidenav li:nth-child(6),
+.sidenav li:nth-child(7) {
+  margin-top: 15px;
 }
 
 .collection .collection-item.avatar i.circle {
