@@ -26,7 +26,13 @@ nav .badge {
 }
 
 .btn.modal-trigger {
-  margin-bottom: 30px;
+  margin: 15px 34% 30px;
+  padding: 0 8px;
+}
+
+.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
 }
 
 .tabs .indicator {
@@ -36,4 +42,9 @@ nav .badge {
 .tabs .tab a:focus,
 .tabs .tab a:focus.active {
   background-color: transparent;
+}
+
+.tabs,
+form {
+  margin-top: 50px;
 }
