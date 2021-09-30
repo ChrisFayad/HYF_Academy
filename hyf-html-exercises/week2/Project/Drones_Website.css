@@ -140,22 +140,16 @@ p {
   /* Float Grid */
   .grid-floats .grid-item {
     float: left;
-    height: 400px;
-    width: 30%;
+    height: calc(100vh / 2);
+    width: calc((100% / 3) - 3.3%);
     margin: 10px 0;
     margin-left: 2%;
     overflow-y: auto;
     border-width: 3px;
   }
-  .grid-floats .grid-item:first-child {
-    margin-left: 2%;
-  }
-  .grid-floats .grid-item:nth-child(2) {
-    margin-left: 4.5%;
-  }
   .grid-floats .grid-item:first-child,
   .grid-floats .grid-item:nth-child(2) {
-    width: 45%;
+    width: calc((100% / 2) - 4%);
   }
 
   .grid-floats .grid-item img {
@@ -209,6 +203,9 @@ p {
   .grid-flex .grid-item:first-child p {
     padding: 37px 10px;
   }
+  .grid-flex .grid-item:nth-child(2) p {
+    padding: 5px 15px;
+  }
 }
 
 /* Desktop Version */
@@ -246,18 +243,17 @@ p {
   /* Float Grid */
   .grid-floats .grid-item {
     float: left;
-    height: 615px;
+    height: calc(100vh / 2);
     width: 23%;
     margin: 10px 0;
     margin-left: 1.5%;
-    overflow-y: hidden;
+    overflow-y: auto;
     border-width: 5px;
   }
   .grid-floats .grid-item:first-child {
-    width: 48%;
+    width: calc(((100vw / 4) - 2%) * 2);
     margin-left: 2%;
     height: auto;
-    margin-top: 85px;
   }
   .grid-floats .grid-item:first-child img {
     width: 50%;
@@ -273,43 +269,33 @@ p {
     transform: scale(0.5) rotate(360deg);
   }
   .grid-floats .grid-item:nth-child(2) {
-    width: 23%;
+    width: calc((100vw / 4) - 2%);
     margin-left: 1.5%;
   }
   .grid-floats .grid-item:first-child p {
     line-height: 2.5rem;
     border: hidden;
-    margin-top: 45px;
+    margin-top: 10px 5px;
   }
   .grid-floats .grid-item p {
     word-break: keep-all;
     color: cornflowerblue;
-    height: 268px;
-    overflow-y: auto;
-  }
-  .grid-floats .grid-item:nth-child(2) p {
-    padding-top: 35px;
-  }
-  .grid-floats .grid-item:nth-child(4) p,
-  .grid-floats .grid-item:nth-child(8) p,
-  .grid-floats .grid-item:nth-child(11) p {
-    padding-top: 25px;
+    padding-top: 5px;
   }
   .grid-floats .grid-item p::selection {
     background-color: brown;
   }
   /* Flex Grid */
   .grid-flex .grid-item {
-    width: 23%;
+    width: calc((100vw / 4) - 2%);
     height: auto;
     border: 5px dashed black;
   }
   .grid-flex .grid-item:first-child {
-    width: 48%;
+    width: calc((100% / 2) - 2%);
   }
-  .grid-flex .grid-item:nth-child(2),
-  .grid-flex .grid-item:nth-child(3) {
-    width: 23%;
+  .grid-flex .grid-item:nth-child(2) {
+    width: calc((100vw / 4) - 2%);
   }
 
   .grid-flex .grid-item img {
